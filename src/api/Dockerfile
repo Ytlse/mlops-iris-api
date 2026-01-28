@@ -5,7 +5,7 @@ WORKDIR /app
 COPY src/api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY src/models/.joblib .
+COPY models/model.joblib .
 COPY src/api/main.py .
 
 
